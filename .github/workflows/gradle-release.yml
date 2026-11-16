@@ -20,7 +20,7 @@ jobs:
         run: chmod +x gradlew
   
       - name: Build release binary with Gradle
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleDebug
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
